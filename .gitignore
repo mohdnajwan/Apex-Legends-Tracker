@@ -1,1 +1,10 @@
 node_modules
+client/node_modules
+client/.pnp
+client/.pnp.js
+client/public
+# testing
+client/coverage
+
+# production
+cient/build
