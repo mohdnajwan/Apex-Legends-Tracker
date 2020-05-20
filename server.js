@@ -14,10 +14,10 @@ app.use('/api', Profile);
 const port = 3001 || process.env.PORT;
 
 // Add Static Path
-app.use(express.static(path.join(__dirname + '/build/')));
+app.use(express.static(path.join(__dirname + '/client/public')));
 
 app.get('/*',(req,res)=>{
-    res.sendFile(path.join(__dirname + '/build/index.html'));
+    res.sendFile(path.join(__dirname + '/client/public/index.html'));
 });
 
 // Listen / Create Server
