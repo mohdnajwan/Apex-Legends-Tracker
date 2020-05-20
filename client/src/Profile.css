@@ -1,0 +1,80 @@
+.lifetime-stats{
+    padding: 10px;
+    width: 50vw;
+    border: 1px solid #30475e;
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.lifetime-box{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profile-image{
+    height: 40%;
+    width: 45%;
+    border-radius: 50%;
+}
+
+.legends-box{
+    padding: 10px;
+    width: 700px;
+    box-sizing: border-box;
+    border: 1px solid #30475e;
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.legend-justify{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.legend-image{
+    height: 300px;
+    width: 300px;
+    background: transparent;
+}
+
+.center{
+    margin: auto;
+    width: 50%;
+    padding: 10px
+}
+
+.legends-stats{
+    padding: 10px;
+    background: transparent;
+}
+
+h2{
+    color: white;
+}
+
+
+.loading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.errorMsg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align: center;
+}
+
+.errorButton{
+    border: none;
+    background: white;
+    color: black;
+    height: 50px;
+    width: 150px;
+}
+
+
