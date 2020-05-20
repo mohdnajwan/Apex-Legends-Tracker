@@ -7,17 +7,19 @@ const Profile = require('./routes/profile');
 
 app.use(cors());
 
+
+// Server Static File
+app.use(express.static(path.join(__dirname, 'client/build')));
+
 // Route
 app.use('/api', Profile);
 
 // Create Port
 const port = 3001 || process.env.PORT;
 
-// Add Static Path
-app.use(express.static(path.join(__dirname + '/client/public')));
-
+// Handle any request that doesnt macth route
 app.get('/*',(req,res)=>{
-    res.sendFile(path.join(__dirname + '/client/public/index.html'));
+    res.sendFile(path.join(__dirname + '/client/build/index.html'));
 });
 
 // Listen / Create Server
