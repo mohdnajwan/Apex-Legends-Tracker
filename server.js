@@ -18,7 +18,7 @@ app.use('/api', Profile);
 const port = 3001 || process.env.PORT;
 
 // Handle any request that doesnt macth route
-app.get('/',(req,res)=>{
+app.get(/.*/,(req,res)=>{
     res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
 });
 
