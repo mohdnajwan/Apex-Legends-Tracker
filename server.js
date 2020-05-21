@@ -15,11 +15,12 @@ const port = process.env.PORT || 5000;
 
 if (process.env.NODE_ENV === "production") {
     // Set static folder
-    app.use(express.static(path.join(__dirname + '/../build')));
+    app.use(express.static(path.join(__dirname, 'build')));
   
     app.get("*", (req, res) => {
-        res.sendFile(path.join(__dirname, '/../build/index.html'));
-  });
+        const index = path.join(__dirname, 'build', 'index.html');
+        res.sendFile(index);
+    });
 }
 
 // Listen / Create Server
