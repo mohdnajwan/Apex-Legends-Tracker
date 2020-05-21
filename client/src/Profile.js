@@ -45,7 +45,7 @@ const Profile = () => {
     // Try to fetch
     try {
       const response = await fetch(
-        `http://localhost:3001/api/${platform}/${username}`
+        `/api/${platform}/${username}`
       );
       const data = await response.json();
       console.log(data);
