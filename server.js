@@ -11,7 +11,7 @@ app.use(cors());
 app.use('/api', Profile);
 
 // Create Port
-const port = 3001 || process.env.PORT;
+const port = process.env.PORT || 5000;
 
 if (process.env.NODE_ENV === "production") {
     // Set static folder
