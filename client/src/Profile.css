@@ -1,6 +1,6 @@
 .lifetime-stats{
     padding: 10px;
-    width: 50vw;
+    width: 100%;
     border: 1px solid #30475e;
     color: white;
     border-radius: 10px 10px 10px 10px;
@@ -12,8 +12,8 @@
 }
 
 .profile-image{
-    height: 40%;
-    width: 45%;
+    height: 100px;
+    width: 110px;
     border-radius: 50%;
 }
 
@@ -75,6 +75,30 @@ h2{
     color: black;
     height: 50px;
     width: 150px;
+}
+
+@media screen and (max-width: 600px){
+    *{
+        font-size: 12px;
+    }
+    .profile-image{
+        height: 75px;
+        width: 80px;
+    }
+    .legend-image{
+        height: 100px;
+        width: 100px;
+    }
+    .legends-box{
+        width: 100%;
+    }
+    .legend-justify{
+        justify-content: none;
+    }
+    .rank-image{
+        width: 80px;
+        height: 75px;
+    }
 }
 
 

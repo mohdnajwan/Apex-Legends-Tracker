@@ -61,3 +61,16 @@ button{
 .body{
     margin-top: 10%;
 }
+
+@media screen and (max-width: 600px){
+    .search-box{
+        width: 300px;
+    }
+    .search-input{
+        width: 100%;
+    }
+    .image-logo{
+        height: 200px;
+        width: 200px;
+    }
+}

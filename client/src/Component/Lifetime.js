@@ -15,7 +15,7 @@ const Lifetime = (props) => {
       </div>
       <div>
         <p>Rank: {rankScore?.metadata.rankName || "No information"}</p>
-        <img src={rankScore?.metadata.iconUrl || "No rank image"} alt="" />
+        <img className="rank-image" src={rankScore?.metadata.iconUrl || "No rank image"} alt="" />
         <p>MMR: {rankScore?.displayValue || "0"}</p>
       </div>
     </div>
