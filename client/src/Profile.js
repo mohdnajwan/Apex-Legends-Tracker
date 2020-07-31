@@ -7,6 +7,7 @@ import ErrorMessage from "./Component/ErrorMsg";
 import "./Profile.css";
 
 const Profile = () => {
+  // Get platform and username from parameter
   const { platform, username } = useParams();
 
   // State Initialize
@@ -68,11 +69,11 @@ const Profile = () => {
 
   return (
     <div className="center">
-      {loading ? (
-        <CircleLoading />
+      {loading ? ( // Make Loading condition
+        <CircleLoading /> // Loading Circle
       ) : error ? (
-        <ErrorMessage data={errorMsg} />
-      ) : (
+        <ErrorMessage data={errorMsg} /> // If Error
+      ) : ( // If NOT Error
         <div>
           <h2>Profile</h2>
           <div className="lifetime-stats">

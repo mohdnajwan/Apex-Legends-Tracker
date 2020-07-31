@@ -13,6 +13,7 @@ const Legends = (props) => {
       return obj;
     });
 
+  // Passing each legends stats to Legend.js
   return (
     <div>
       <h2>List of Legends</h2>

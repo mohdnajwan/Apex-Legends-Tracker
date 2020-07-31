@@ -1,10 +1,11 @@
 import React from "react";
 
 const Lifetime = (props) => {
-  // Set data
+  // Set data retrieved from props
   const { platformUserHandle, avatarUrl } = props.data;
   const { kills, level, rankScore } = props.overview;
 
+  // Return Player's lifetime summary
   return (
     <div className="lifetime-box">
       <div>
